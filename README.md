@@ -1,18 +1,21 @@
-# Shopify FastAPI and Streamlit Deployment
+# Shopify API Integration using FastAPI and Streamlit
 
 This project integrates FastAPI APIs to fetch data from a Shopify store, stores it in MongoDB, and provides a Streamlit dashboard to visualize the orders based on some conditions and products details.
 # Project Structure
-.
+
+
+
+Project Structure:
 ├── fastapi_app
 │   ├── main.py                # Entry point for the FastAPI application
-│   ├── database.py              # connecting with MongoDB
-│   ├── controllers
-|   |   └── __init__.py  
-│   │   └── shopify_controller.py         # Shopify-related API endpoints
-│   ├── services
-|   |   └── __init__.py  
-│   |   └── shopify_service.py  # Service logic for Shopify API integration
-├── streamlit_dashboard.py # Streamlit app for data visualization
+│   ├── database.py            # Handles MongoDB connection
+│   ├── controllers            # Contains API endpoint definitions
+│   │   ├── __init__.py        # Makes the directory a Python package
+│   │   └── shopify_controller.py # Shopify-related API endpoints
+│   ├── services               # Contains business logic
+│   │   ├── __init__.py        # Makes the directory a Python package
+│   │   └── shopify_service.py # Service logic for Shopify API integration
+├── streamlit_dashboard.py     # Streamlit app for data visualization
 ├── requirements.txt           # Python dependencies
 
 # Features
